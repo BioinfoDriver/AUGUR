@@ -16,9 +16,9 @@ For readers who want to obtain raw/result data, locate data file, then download 
 
 * In Github, download file by clicking either `Download` button or `Raw` button at corresponding data page
 
-* Use linux command `wget` or `curl`, fo example, you can download PCNA gene sets by
+* Use linux command `wget` or `curl`, fo example, you can download prognostic gene sets by
 
-  wget `https://github.com/BioinfoDriver/AUGUR/tree/main/data/PCNA_Signature.txt`
+  wget `https://github.com/BioinfoDriver/AUGUR/tree/main/data/Signature.xlsx`
 
 Or you can download whole respository with one of following ways:
 
