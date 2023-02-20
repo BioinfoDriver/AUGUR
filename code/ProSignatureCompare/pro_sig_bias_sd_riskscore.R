@@ -51,6 +51,11 @@ RiskScoreSD <- function(exp.data, risk.sig, sig.name){
  
   # calculate RiskScore
   RiskScore <- colSums(exp.data * risk.sig)
+  
+  if(sig.name == 'PMID33777771'){
+	RiskScore <- exp(RiskScore)
+  }
+  
   RiskScore <- data.frame(SampleID=names(RiskScore), RiskScore=RiskScore)
   RiskScore$PatientID <- sapply(X=RiskScore$SampleID, FUN=function(x) {unlist(strsplit(as.character(x), split="\\."))[1]})
   
